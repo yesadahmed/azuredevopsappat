@@ -35,7 +35,7 @@ namespace azuredevopsappat
             services.AddSingleton<IBuildOperations, BuildOperations>();
             services.AddSingleton<IWorkItemOperation, WorkItemOperation>();
 
-            //Poling objects
+            //Poling objects ok
             var DevOpsAuths = new DevOpsAuths();
             Configuration.GetSection(DevOpsAuths.DevOpsAuth).Bind(DevOpsAuths);
 
